@@ -7,7 +7,7 @@ const weatherForecast = document.querySelector('.future-forecast__container')
 const currentTemp = document.querySelector('.today__temp');
 const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-const API = 'f8ae7629072ed4b5a965fa3c6eb03a5a';
+const API = '1112672e97707278ec7d092d97544563';
 
 
 
@@ -27,3 +27,15 @@ setInterval(()=>{
     dateElement.innerHTML = days[day] + ',' + date + '' + months[month];
 
 },1000);
+
+getWeather();
+function getWeather(){
+    navigator.geolocation.getCurrentPosition(success => {
+
+        let {latitud, longitude} = success.coords;
+
+        fetch(`https://api.openweathermap.org/data/3.0/onecall?lat=${latitud}&lon=${longitude}&exclude={part}&appid=${API}`).then( res => res.json()).then(data =>{
+            console.log(data)
+        })
+    })
+}
