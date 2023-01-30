@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./Img/pexels-jhonny-salas-brochero-12636889.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+.main-container{
+    padding: 20px 70px;
+    color: whitesmoke;
+}
+
+.main-current-info{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.date-container{
+    font-weight: 100;
+}
+.date__time{
+    font-size: 70px;
+}
+.date__initials{
+    font-size: 30px;
+    margin-left: 20px;
+}
+.date_-date{
+    font-size: 30px;
+}
+
+.secondary__current-info{
+ display: flex;
+ flex-direction: column;
+ background: rgb(24, 24, 27, 0.6);   
+ padding: 20px;
+ border-radius: 10px;
+ margin: 10px 0;
+ border: 1px solid #eee;
+}
+
+.weather__item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.place-container{
+    text-align: end;
+}
+
+.place__timezone{
+    font-size: 30px;
+    font-weight: 250;
+}
+
+.place__country{
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.future-forecast__container{
+    background: rgb(24, 24, 27, 0.8);
+    padding: 25px;
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    color: white;
+    width: 100%;
+    align-items: center;
+    justify-content: center;   
+}
+
+.weather-forecast__container{
+    display: flex;
+}
+
+.today-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.today__day{
+    padding: 5px 15px;
+    background: #3c3c44;
+    border-radius: 50px;
+    text-align: center;
+    
+}
+
+.today-info .today__temp{
+    font-size: 18px;
+    padding-top: 15px;
+}
+
+.weather-forecast__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 15px;
+
+}
+
+.weather-forecast__item .today__temp{
+    font-weight: 100;
+}
+
+
+/*-------------Media----------*/
+
+@media only screen and (max-width:730px){
+    .future-forecast__container{
+        justify-content: start;
+        align-items: none;
+        overflow-y: scroll;
+    }
+
+}
