@@ -15,7 +15,7 @@ body{
 
 .main-container{
     padding: 20px 70px;
-    color: whitesmoke;
+    color: black;
 }
 
 .main-current-info{
@@ -25,7 +25,7 @@ body{
 }
 
 .date-container{
-    font-weight: 100;
+    font-weight: 320;
 }
 .date__time{
     font-size: 70px;
@@ -33,9 +33,11 @@ body{
 .date__initials{
     font-size: 30px;
     margin-left: 20px;
+    font-weight: 320;
 }
 .date_-date{
     font-size: 30px;
+    
 }
 
 .secondary__current-info{
@@ -59,7 +61,8 @@ body{
 
 .place__timezone{
     font-size: 30px;
-    font-weight: 250;
+    font-weight: 320;
+
 }
 
 .place__country{
